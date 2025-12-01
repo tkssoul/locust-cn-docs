@@ -11,7 +11,7 @@ import { describe, it, expect } from 'vitest'
 import { readFileSync, readdirSync, statSync, existsSync } from 'fs'
 import { resolve, extname } from 'path'
 
-const brandLogoPath = 'docs/public/assets/branding/Locust-logo.svg'
+const brandLogoPath = 'docs/public/Locust-logo-lightmode.svg'
 const imageExtensions = ['.png', '.jpg', '.jpeg', '.webp', '.avif', '.svg']
 
 const collectImageFiles = (dir: string): string[] => {

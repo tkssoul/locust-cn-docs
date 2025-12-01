@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { readFileSync, existsSync, statSync } from 'fs'
 import { resolve } from 'path'
 
-const logoFile = 'docs/public/assets/branding/Locust-logo.svg'
+const logoFile = 'docs/public/Locust-logo-lightmode.svg'
 
 describe('图片优化系统', () => {
   describe('配置验证', () => {

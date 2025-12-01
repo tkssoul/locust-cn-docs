@@ -1,11 +1,11 @@
 # robots.txt for Locust 中文文档
-# https://locust-cn.pages.dev
+# https://locustcndocs.boringlink.cn/
 
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://locust-cn.pages.dev/sitemap.xml
+Sitemap: https://locustcndocs.boringlink.cn/sitemap.xml
 
 # 国内搜索引擎优化
 User-agent: Baiduspider

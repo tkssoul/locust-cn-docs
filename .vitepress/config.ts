@@ -43,8 +43,11 @@ export default defineConfig({
           '使用 Python 编写性能测试脚本，支持分布式负载测试，提供实时 Web UI 监控。Locust 官方中文文档，翻译精准，示例完整。',
       },
     ],
-    ['meta', { property: 'og:url', content: 'https://locust-cn.pages.dev/' }],
-    ['meta', { property: 'og:image', content: 'https://locust-cn.pages.dev/Locust-logo.svg' }],
+    ['meta', { property: 'og:url', content: 'https://locustcndocs.boringlink.cn/' }],
+    [
+      'meta',
+      { property: 'og:image', content: 'https://locustcndocs.boringlink.cn/Locust-logo-darkmode.svg' },
+    ],
 
     // Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
@@ -66,13 +69,16 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:image',
-        content: 'https://locust-cn.pages.dev/Locust-logo.svg',
+        content: 'https://locustcndocs.boringlink.cn/Locust-logo-darkmode.svg',
       },
     ],
 
     // 百度 SEO 优化
     ['meta', { name: 'baidu-site-verification', content: 'codeva-XXXXXXXX' }],
-    ['meta', { name: 'mobile-agent', content: 'format=html5; url=https://locust-cn.pages.dev/' }],
+    [
+      'meta',
+      { name: 'mobile-agent', content: 'format=html5; url=https://locustcndocs.boringlink.cn/' },
+    ],
     ['meta', { name: 'applicable-device', content: 'pc,mobile' }],
     ['meta', { name: 'renderer', content: 'webkit' }],
     ['meta', { httpEquiv: 'Cache-Control', content: 'no-transform' }],
@@ -88,10 +94,10 @@ export default defineConfig({
     ['meta', { name: 'google-site-verification', content: 'XXXXXXXXXXXXXXXXXXXXXXXX' }],
 
     // Canonical URL
-    ['link', { rel: 'canonical', href: 'https://locust-cn.pages.dev/' }],
+    ['link', { rel: 'canonical', href: 'https://locustcndocs.boringlink.cn/' }],
 
     // Alternate language versions
-    ['link', { rel: 'alternate', hreflang: 'zh-CN', href: 'https://locust-cn.pages.dev/' }],
+    ['link', { rel: 'alternate', hreflang: 'zh-CN', href: 'https://locustcndocs.boringlink.cn' }],
     ['link', { rel: 'alternate', hreflang: 'en', href: 'https://docs.locust.io/' }],
 
     // JSON-LD 结构化数据
@@ -106,10 +112,10 @@ export default defineConfig({
         operatingSystem: 'Cross-platform',
         description:
           'Locust 是一个易于使用、可编写脚本且可扩展的性能测试工具。使用 Python 代码定义用户行为，测试任何系统。',
-        url: 'https://locust-cn.pages.dev/',
+        url: 'https://locustcndocs.boringlink.cn/',
         author: {
           '@type': 'Organization',
-          name: 'Locust 中文文档团队',
+          name: 'Boring Link',
         },
         offers: {
           '@type': 'Offer',
@@ -144,7 +150,7 @@ export default defineConfig({
   // 主题配置
   themeConfig: {
     siteTitle: false,
-    logo: '/Locust-logo.svg',
+    logo: { light: '/Locust-logo-lightmode.svg', dark: '/Locust-logo-darkmode.svg' },
 
     nav: [
       { text: '首页', link: '/' },
@@ -191,10 +197,10 @@ export default defineConfig({
       ],
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/locustio/locust' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/tkssoul/locust-cn-docs' }],
 
     editLink: {
-      pattern: 'https://github.com/your-repo/locust-cn-docs/edit/main/docs/:path',
+      pattern: 'https://github.com/tkssoul/locust-cn-docs',
       text: '在 GitHub 上编辑此页',
     },
 
@@ -306,13 +312,16 @@ export default defineConfig({
 
   // 站点地图
   sitemap: {
-    hostname: 'https://locust-cn.pages.dev',
+    hostname: 'https://locustcndocs.boringlink.cn/',
     transformItems: (items) => {
       return items.map((item) => {
         const url = item.url
 
         // 首页优先级最高
-        if (url === 'https://locust-cn.pages.dev/' || url === 'https://locust-cn.pages.dev') {
+        if (
+          url === 'https://locustcndocs.boringlink.cn/' ||
+          url === 'https://locustcndocs.boringlink.cn/'
+        ) {
           return { ...item, priority: 1.0, changefreq: 'weekly' }
         }
         // API 参考（必须在 getting-started 之前检查）
@@ -341,7 +350,7 @@ export default defineConfig({
     if (path && !path.endsWith('/')) {
       path += '/'
     }
-    const canonicalUrl = `https://locust-cn.pages.dev/${path}`
+    const canonicalUrl = `https://locustcndocs.boringlink.cn/${path}`
 
     // 为每个页面添加 canonical URL
     head.push(['link', { rel: 'canonical', href: canonicalUrl }])
@@ -380,7 +389,7 @@ export default defineConfig({
             '@type': 'ListItem',
             position: 1,
             name: 'Locust 中文文档',
-            item: 'https://locust-cn.pages.dev/',
+            item: 'https://locustcndocs.boringlink.cn/',
           },
           {
             '@type': 'ListItem',
@@ -400,7 +409,7 @@ export default defineConfig({
         description: pageData.frontmatter.description || '',
         author: {
           '@type': 'Organization',
-          name: 'Locust 中文文档团队',
+          name: 'Boring Link',
         },
         datePublished: pageData.frontmatter.lastUpdated || '2025-11-27',
         dateModified: pageData.frontmatter.lastUpdated || '2025-11-27',

@@ -1,6 +1,8 @@
 # Locust 中文文档
 
-![Locust](https://github.com/tkssoul/locust-cn-docs/tree/main/docs/public/Locust-logo.svg)
+<div align="center">
+  <img src="./docs/public/Locust-logo-lightmode.svg" alt="Locust Logo" style="max-width: 800px;" />
+</div>
 
 > 精准、及时、易读的 Locust 官方中文文档  
 > 完整对应 Locust 2.45.5+，与官方英文版保持同步更新

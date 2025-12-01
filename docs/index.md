@@ -9,18 +9,20 @@ hero:
   text: 性能测试框架
   tagline: 简单、可扩展、开源 - 用 Python 编写性能测试
   image:
-    src: /assets/branding/Locust-logo.svg
+    light: /Locust-logo-lightmode.svg
+    dark: /Locust-logo-darkmode.svg
     alt: Locust 性能测试框架 Logo
   actions:
     - theme: brand
       text: 快速开始
       link: /getting-started/installation
     - theme: alt
-      text: 查看 GitHub
-      link: https://github.com/locustio/locust
+      text: GitHub
+      link: https://github.com/tkssoul/locust-cn-docs.git
 
 features:
-  - icon: 🐍
+  - icon:
+      src: /python-logo.svg
     title: 纯 Python 编写
     details: 使用熟悉的 Python 代码定义用户行为，无需学习新的 DSL 或配置语言
 
