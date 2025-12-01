@@ -71,3 +71,11 @@ locust -f locustfile.py --host=https://example.com
 - 在 Discussions 交流使用经验
 
 感谢所有贡献者和使用者的支持
+
+## 捐助 Donation
+
+如果您觉得这个项目对您有帮助，欢迎通过以下方式支持我：
+
+<div>
+  <img src="/docs/public/支付宝收款码.JPG" alt="支付宝收款码" style="width: 200px; margin-right: 20px;" />
+</div>
