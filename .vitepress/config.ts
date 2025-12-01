@@ -179,7 +179,7 @@ export default defineConfig({
   },
 
   // GitHub仓库子路径配置
-  base: '/locust-cn-docs/',
+  // base: '/locust-cn-docs/',
 
   // 源目录配置
   srcDir: 'docs',

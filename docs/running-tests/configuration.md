@@ -37,8 +37,8 @@ lastUpdated: 2025-11-27
   :headers='["分组", "关键选项", "说明"]'
   :allowHtml="true"
   :rows='[
-    ["Master", {"html":"<code>--master、<br />--master-bind-host、<br />--master-bind-port、<br />--expect-workers、<br />--expect-workers-max-wait</code>"}, "作为 Master 等待 Worker；后两者确保 Worker 全部就绪后再开跑"],
-    ["Worker", {"html":"<code>--worker、<br />--master-host、<br />--master-port、<br />--processes</code>"}, "Worker 连接 Master，可用 --processes fork 多个 Worker（实验特性）"],
+  ["Master", {"html":"<code>--master、<br />--master-bind-host &lt;ip-or-iface&gt;、<br />--master-bind-port &lt;port&gt;、<br />--expect-workers &lt;worker-count&gt;、<br />--expect-workers-max-wait &lt;seconds&gt;</code>"}, "作为 Master 等待 Worker；后两者确保 Worker 全部就绪后再开跑"],
+  ["Worker", {"html":"<code>--worker、<br />--master-host &lt;hostname-or-ip&gt;、<br />--master-port &lt;port&gt;、<br />--processes &lt;count-per-node&gt;</code>"}, "Worker 连接 Master，可用 --processes fork 多个 Worker（实验特性）"],
     ["统计输出", {"html":"<code>--csv、<br />--csv-full-history、<br />--html、<br />--json / --json-file、<br />--print-stats、<br />--only-summary、<br />--reset-stats</code>"}, "结合 --headless 构建自动化报表；--reset-stats 需 Master/Worker 同时开启"],
     ["日志", {"html":"<code>--loglevel / -L、<br />--logfile、<br />--skip-log-setup</code>"}, "默认 INFO，可完全自定义 logging 配置"],
     ["结束条件", {"html":"<code>--stop-timeout、<br />--exit-code-on-error、<br />--equal-weights、<br />--profile、<br />--otel</code>"}, "--stop-timeout 确保在退出前等待用户完成；--exit-code-on-error 让 CI 遇到失败时返回指定退码"],

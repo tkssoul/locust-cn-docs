@@ -24,24 +24,26 @@ $ locust -f locustfile.py --worker --master-host 192.168.1.10
 
 ## 2. CLI 选项
 
+以下参数语法对齐官方文档 [Distributed load generation](https://docs.locust.io/en/stable/running-distributed.html#options-for-distributed-load-generation)，使用占位符提示需要填入的值。
+
 <ResponsiveTable
   :headers='["角色", "关键参数", "说明"]'
   :allowHtml="true"
   :rows='[
     [
       {"html":"<span style=\"display:inline-block; min-width: 90px;\">Master</span>"},
-      {"html":"<code style=\"display:block; white-space: normal; word-break: break-word;\">--master<br />--expect-workers</code>"},
-      {"html":"<span style=\"display:inline-block; min-width: 320px;\">指定 Worker 数并等待全部就绪</span>"}
+      {"html":"<code style=\"display:block; white-space: normal; word-break: break-word;\">--master<br />--master-bind-host &lt;ip-or-iface&gt;<br />--master-bind-port &lt;port&gt;<br />--expect-workers &lt;worker-count&gt;<br />--expect-workers-max-wait &lt;seconds&gt;</code>"},
+      {"html":"<span style=\"display:inline-block; min-width: 320px;\">绑定 Master 监听地址，设置等待 X 个 Worker 才开始（默认端口 5557）</span>"}
     ],
     [
       {"html":"<span style=\"display:inline-block; min-width: 90px;\">Worker</span>"},
-      {"html":"<code style=\"display:block; white-space: normal; word-break: break-word;\">--worker<br />--master-host<br />--master-port</code>"},
-      {"html":"<span style=\"display:inline-block; min-width: 320px;\">指向 Master 地址</span>"}
+      {"html":"<code style=\"display:block; white-space: normal; word-break: break-word;\">--worker<br />--master-host &lt;hostname-or-ip&gt;<br />--master-port &lt;port&gt;<br />--processes &lt;count-per-node&gt;</code>"},
+      {"html":"<span style=\"display:inline-block; min-width: 320px;\">指定 Master 地址/端口（默认 5557），可用 --processes 在单机 fork 多个 Worker</span>"}
     ],
     [
       {"html":"<span style=\"display:inline-block; min-width: 90px;\">通用</span>"},
-      {"html":"<code style=\"display:block; white-space: normal; word-break: break-word;\">--heartbeat-liveness<br />--heartbeat-interval</code>"},
-      {"html":"<span style=\"display:inline-block; min-width: 320px;\">调整心跳间隔，处理高延迟网络</span>"}
+      {"html":"<code style=\"display:block; white-space: normal; word-break: break-word;\">--heartbeat-liveness &lt;seconds&gt;<br />--heartbeat-interval &lt;seconds&gt;</code>"},
+      {"html":"<span style=\"display:inline-block; min-width: 320px;\">对心跳超时/发送间隔做细粒度控制，适配高延迟网络</span>"}
     ]
   ]'
 />
