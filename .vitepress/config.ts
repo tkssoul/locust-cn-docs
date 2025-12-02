@@ -77,7 +77,7 @@ export default defineConfig({
     ],
 
     // 百度 SEO 优化
-    ['meta', { name: 'baidu-site-verification', content: 'codeva-XXXXXXXX' }],
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-YAUX21OBrY' }],
     [
       'meta',
       { name: 'mobile-agent', content: 'format=html5; url=https://locustcndocs.boringlink.cn/' },
@@ -88,13 +88,19 @@ export default defineConfig({
     ['meta', { httpEquiv: 'Cache-Control', content: 'no-siteapp' }],
 
     // 360 搜索优化
-    ['meta', { name: '360-site-verification', content: 'XXXXXXXXXXXXXXXXXXXXXXXX' }],
+    ['meta', { name: '360-site-verification', content: '9040b130544eb4b7f7422e0d12da884c' }],
 
-    // 搜狗搜索优化
-    ['meta', { name: 'sogou_site_verification', content: 'XXXXXXXXXXXXXXXX' }],
+    // Bing搜索优化
+    ['meta', { name: 'msvalidate.01', content: '6DA68FB0290FE4448969253F032B005F' }],
 
     // Google 站点验证
-    ['meta', { name: 'google-site-verification', content: 'XXXXXXXXXXXXXXXXXXXXXXXX' }],
+    [
+      'meta',
+      {
+        name: 'google-site-verification',
+        content: 'BjTuSdJdqS8WtlC-yjiEJInOfU_vEuDFeWfeYWlkPhA',
+      },
+    ],
 
     // Canonical URL
     ['link', { rel: 'canonical', href: 'https://locustcndocs.boringlink.cn/' }],
