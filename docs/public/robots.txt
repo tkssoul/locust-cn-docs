@@ -3,65 +3,19 @@
 
 User-agent: *
 Allow: /
+Disallow: /_nuxt
+Disallow: /.vitepress
+
+# 国内搜索引擎（可根据服务器压力决定是否保留 Crawl-delay）
+User-agent: Baiduspider
+User-agent: Baiduspider-image
+User-agent: Baiduspider-mobile
+User-agent: 360Spider
+User-agent: Sogou*
+User-agent: Sosospider
+User-agent: YisouSpider
+User-agent: Bytespider
+Crawl-delay: 0.5
 
 # Sitemaps
 Sitemap: https://locustcndocs.boringlink.cn/sitemap.xml
-
-# 国内搜索引擎优化
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 0.5
-
-User-agent: Baiduspider-image
-Allow: /
-Crawl-delay: 0.5
-
-User-agent: Baiduspider-mobile
-Allow: /
-Crawl-delay: 0.5
-
-User-agent: 360Spider
-Allow: /
-Crawl-delay: 0.5
-
-User-agent: Sogou web spider
-Allow: /
-Crawl-delay: 0.5
-
-User-agent: Sogou inst spider
-Allow: /
-Crawl-delay: 0.5
-
-User-agent: Sogou spider2
-Allow: /
-Crawl-delay: 0.5
-
-User-agent: Sosospider
-Allow: /
-Crawl-delay: 0.5
-
-User-agent: YisouSpider
-Allow: /
-Crawl-delay: 0.5
-
-User-agent: Bytespider
-Allow: /
-Crawl-delay: 0.5
-
-# 国际搜索引擎
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0.5
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 0.5
-
-# 禁止访问的路径
-Disallow: /_nuxt/
-Disallow: /.vitepress/
-
-# 默认爬虫规则
-User-agent: *
-Allow: /
-Crawl-delay: 1
