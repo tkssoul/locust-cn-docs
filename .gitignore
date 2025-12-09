@@ -8,6 +8,9 @@ package-lock.json
 yarn.lock
 # pnpm-lock.yaml 应该提交到版本控制
 
+# Cache
+.vitepress/cache/
+
 # Build output
 dist/
 docs/.vitepress/dist/
