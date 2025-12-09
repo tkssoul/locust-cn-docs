@@ -1,6 +1,6 @@
 ---
 title: 运行测试
-titleTemplate: 运行测试
+# titleTemplate: 运行测试
 description: 了解如何配置 CLI、环境变量与分布式模式
 sidebar_position: 0
 lastUpdated: 2025-11-27

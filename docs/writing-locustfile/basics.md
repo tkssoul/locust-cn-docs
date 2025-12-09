@@ -8,13 +8,11 @@ lastUpdated: 2025-11-27
 
 # 编写 Locustfile 基础
 
-本章对应官方文档 “Writing a locustfile” 的核心部分，聚焦如下问题：
+本章对应官方文档 “[Writing a locustfile](https://docs.locust.io/en/stable/writing-a-locustfile.html)” 的核心部分，聚焦如下问题：
 
 1. 如何组织用户类与任务？
 2. 如何拆分模块以便复用？
 3. 如何在脚本中加入指标与断言？
-
-> 英文结构请参考 [Writing a locustfile (2.45.5)](https://docs.locust.io/en/stable/writing-a-locustfile.html)。
 
 ## 项目结构范例
 

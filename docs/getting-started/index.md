@@ -1,6 +1,6 @@
 ---
 title: 快速开始
-titleTemplate: 快速开始
+# titleTemplate: 快速开始
 description: 汇总 Locust 安装、快速开始与首个测试的流程
 sidebar_position: 0
 lastUpdated: 2025-11-27

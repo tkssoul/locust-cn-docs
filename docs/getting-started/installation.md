@@ -1,12 +1,12 @@
 ---
 title: 安装
-titleTemplate: 快速上手Locust
+titleTemplate: 快速开始
 description: 学习如何在你的系统上安装 Locust 性能测试框架
 sidebar_position: 1
 lastUpdated: 2025-11-27
 ---
 
-# 安装 Locust
+# 安装 <!-- term-replacer:ignore-start -->Locust<!-- term-replacer:ignore-end -->
 
 Locust 可以通过 pip 轻松安装。本指南将帮助你在不同的操作系统上安装 Locust。
 
